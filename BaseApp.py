@@ -23,5 +23,8 @@ class BasePage:
     def execute_script(self, script, arg):
         return self.driver.execute_script(script, arg)
 
+    def get_url_and_title(self):
+        return self.driver.current_url, self.driver.title
+
     def go_to_site(self):
         return self.driver.get(self.base_url)

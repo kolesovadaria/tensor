@@ -2,7 +2,7 @@ from Pages import SearchHelper
 import time
 
 
-def test_google_search(browser):
+def test_1_search(browser):
     sbis_main_page = SearchHelper(browser)
     sbis_main_page.go_to_site()
     sbis_main_page.click_img("//a[@href='/contacts']")
